@@ -13,6 +13,7 @@
 		EA15B23F1E649FB500A6129A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA15B23E1E649FB500A6129A /* Assets.xcassets */; };
 		EA15B2421E649FB500A6129A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA15B2401E649FB500A6129A /* LaunchScreen.storyboard */; };
 		EA15B24B1E64A05900A6129A /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA15B24A1E64A05900A6129A /* FaceView.swift */; };
+		EA76AD3E1E66105000C20997 /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD3D1E66105000C20997 /* FacialExpression.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EA15B2411E649FB500A6129A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA15B2431E649FB500A6129A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA15B24A1E64A05900A6129A /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		EA76AD3D1E66105000C20997 /* FacialExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				EA15B2491E64A01000A6129A /* Supporting Files */,
-				EA15B2391E649FB500A6129A /* ViewController.swift */,
 				EA15B23B1E649FB500A6129A /* Main.storyboard */,
+				EA15B2391E649FB500A6129A /* ViewController.swift */,
 				EA15B24A1E64A05900A6129A /* FaceView.swift */,
+				EA76AD3D1E66105000C20997 /* FacialExpression.swift */,
 			);
 			path = FaceIt;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA15B23A1E649FB500A6129A /* ViewController.swift in Sources */,
+				EA76AD3E1E66105000C20997 /* FacialExpression.swift in Sources */,
 				EA15B2381E649FB500A6129A /* AppDelegate.swift in Sources */,
 				EA15B24B1E64A05900A6129A /* FaceView.swift in Sources */,
 			);

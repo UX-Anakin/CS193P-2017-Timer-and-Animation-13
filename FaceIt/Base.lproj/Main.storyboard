@@ -49,6 +49,9 @@
                             <constraint firstAttribute="trailing" secondItem="GRO-d2-DAF" secondAttribute="trailing" id="upB-E5-F3D"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="faceView" destination="GRO-d2-DAF" id="vZ9-dc-wKM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
