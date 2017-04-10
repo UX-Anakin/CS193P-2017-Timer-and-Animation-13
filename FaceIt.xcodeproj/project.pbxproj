@@ -16,6 +16,7 @@
 		EA76AD3E1E66105000C20997 /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD3D1E66105000C20997 /* FacialExpression.swift */; };
 		EA95F38A1E6CAE15001ED272 /* EmotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95F3891E6CAE15001ED272 /* EmotionsViewController.swift */; };
 		EA9810071E6D9E8600337D7D /* VCLLoggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9810061E6D9E8600337D7D /* VCLLoggingViewController.swift */; };
+		EAE2361C1E9BC97B00628E6B /* BlinkingFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE2361B1E9BC97B00628E6B /* BlinkingFaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EA76AD3D1E66105000C20997 /* FacialExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
 		EA95F3891E6CAE15001ED272 /* EmotionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionsViewController.swift; sourceTree = "<group>"; };
 		EA9810061E6D9E8600337D7D /* VCLLoggingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCLLoggingViewController.swift; sourceTree = "<group>"; };
+		EAE2361B1E9BC97B00628E6B /* BlinkingFaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlinkingFaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				EA15B23B1E649FB500A6129A /* Main.storyboard */,
 				EA95F3891E6CAE15001ED272 /* EmotionsViewController.swift */,
 				EA15B2391E649FB500A6129A /* FaceViewController.swift */,
+				EAE2361B1E9BC97B00628E6B /* BlinkingFaceViewController.swift */,
 				EA9810061E6D9E8600337D7D /* VCLLoggingViewController.swift */,
 				EA15B24A1E64A05900A6129A /* FaceView.swift */,
 				EA76AD3D1E66105000C20997 /* FacialExpression.swift */,
@@ -161,6 +164,7 @@
 				EA15B23A1E649FB500A6129A /* FaceViewController.swift in Sources */,
 				EA76AD3E1E66105000C20997 /* FacialExpression.swift in Sources */,
 				EA95F38A1E6CAE15001ED272 /* EmotionsViewController.swift in Sources */,
+				EAE2361C1E9BC97B00628E6B /* BlinkingFaceViewController.swift in Sources */,
 				EA15B2381E649FB500A6129A /* AppDelegate.swift in Sources */,
 				EA15B24B1E64A05900A6129A /* FaceView.swift in Sources */,
 			);

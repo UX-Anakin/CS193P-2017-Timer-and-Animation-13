@@ -14,11 +14,7 @@ class EmotionsViewController: VCLLoggingViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var destinationVC = segue.destination
-        if let navigationController = destinationVC as? UINavigationController {
-            destinationVC = navigationController.visibleViewController ?? destinationVC
-        }
-        if  let faceViewController = destinationVC as? FaceViewController,
+        if  let faceViewController = segue.destination.contentViewController as? FaceViewController,
             let identifier = segue.identifier,
             let expression = emotionalFaces[identifier]
         {
@@ -34,4 +30,14 @@ class EmotionsViewController: VCLLoggingViewController {
         "worried": FacialExpression(eyes: .open, mouth: .smirk)
     ]
 
+}
+
+extension UIViewController {
+    var contentViewController: UIViewController {
+        if let vc = self as? UINavigationController {
+            return vc.visibleViewController!
+        } else {
+            return self
+        }
+    }
 }
