@@ -15,9 +15,11 @@ class FaceViewController: VCLLoggingViewController {
             let handler = #selector(FaceView.changeScale(byReactingTo:))
             let pinchRecognizer = UIPinchGestureRecognizer(target: faceView, action: handler)
             faceView.addGestureRecognizer(pinchRecognizer)
-//            let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(toggleEyes(byReactingTo:)))
+            
+//            let tapRecognizer = UITapGestureRecognizer(target: self, action:  #selector(toggleEyes(byReactingTo:)))
 //            tapRecognizer.numberOfTapsRequired = 1
 //            faceView.addGestureRecognizer(tapRecognizer)
+            
             let swipeUpRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(increaseHappiness))
             swipeUpRecognizer.direction = .up
             faceView.addGestureRecognizer(swipeUpRecognizer)
@@ -34,6 +36,7 @@ class FaceViewController: VCLLoggingViewController {
 		static let angle = CGFloat.pi/6                 // radians
 		static let segmentDuration: TimeInterval = 0.5  // each head shake has 3 segments
 	}
+    
 	private func rotateFace(by angle: CGFloat)
 	{
 		faceView.transform = faceView.transform.rotated(by: angle)
@@ -65,7 +68,8 @@ class FaceViewController: VCLLoggingViewController {
 	
 	
 	@IBAction func shakeHead(_ sender: UITapGestureRecognizer)
-	{	shakeHead()
+	{
+        shakeHead()
 	}
 
     func increaseHappiness()

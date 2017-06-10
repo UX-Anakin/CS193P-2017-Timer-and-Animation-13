@@ -22,11 +22,14 @@ class BlinkingFaceViewController: FaceViewController
 	}
 	
 	private func blinkIfNeeded()
-	{	if blinking {
+	{
+        if blinking {
 			faceView.eyesOpen = false
-			Timer.scheduledTimer(withTimeInterval: BlinkRate.closedDuration, repeats: false) { [weak self] timer in
+			Timer.scheduledTimer(withTimeInterval: BlinkRate.closedDuration, repeats: false) {
+                [weak self] timer in
 				self?.faceView.eyesOpen = true
-				Timer.scheduledTimer(withTimeInterval: BlinkRate.openDuration, repeats: false) { [weak self] timer in
+				Timer.scheduledTimer(withTimeInterval: BlinkRate.openDuration, repeats: false) {
+                    [weak self] timer in
 					self?.blinkIfNeeded()
 				}
 			}
